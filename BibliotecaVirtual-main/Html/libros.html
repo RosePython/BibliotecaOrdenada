@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/libros.css">
+    <link rel="stylesheet" href="../Css/BarraNavegacion.css">
+    <link rel="stylesheet" href="../Css/PieDePagina.css">
+    <link rel="shortcut icon" href="../Imagenes/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!--Agregado por Rosa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@500&family=Satisfy&family=Signika+Negative:wght@600&display=swap" rel="stylesheet"> <!--Agregado por Rosa-->
+    <title>Libreria Online</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../Index.html"> <img src="../Imagenes/Logo.png" alt="Logo"></a> <!--modificado por Rosa, tiene que llevar al banner principal-->
+            </div>
+            <div class="buscador">
+                <input type="text">
+                <img src="../Imagenes/lupa.png" alt="imagen lupa">
+            </div>
+            <div class="secciones">
+                <a href="#nosotros">Nosotros</a>
+                <a href="mailto:lula@lula.com"><img src="../Imagenes/sobre.png" alt="Email"></a>
+                <!--ver a qué mail lo referenciamos-->
+                <img src="../Imagenes/usuario.png" alt="Menu Usuario">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor">
+                <div class="portada">
+                    <div class="izquierda">
+                        <div class="libro">
+                            <div id="libro">
+                                <img src="../Imagenes/1984.png" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="botones">
+                            <div class="contenedor-btn">
+                                <button onclick="sucursales()">Sucursales</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="derecha">
+                        <h1>Entrevista con el vampiro</h1>
+                        <br>
+                        <h2>Anne Rice</h2>
+                        <br>
+                        <div id="estrellas">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>  
+                        </div>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt.</p>
+                        <br>
+                        <div class="botones">
+                            <div class="contenedor-btn">
+                                <button onclick="descargar()">Descargar</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Pagina creada por Clara, Omar, Pablo, Rosa, Lucía</p>
+    </footer>
+    <script type='text/javascript' src='../Js/libros.js'></script>
+</body>
+
+</html>
