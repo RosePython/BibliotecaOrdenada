@@ -114,3 +114,9 @@ libro.addEventListener('click', function (){
   // redireccion
   window.location.href = './Html/libros.html';
 });
+
+/*apertura de menu avatar*/
+function abrirMenu() {
+    var opcionesMenu = document.getElementById("opcionesMenu");
+    opcionesMenu.style.display = (opcionesMenu.style.display === "block") ? "none" : "block";
+}

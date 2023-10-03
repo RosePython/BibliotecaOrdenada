@@ -21,21 +21,28 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="../Index.html"> <img src="../Imagenes/Logo.png" alt="Logo"></a> <!--modificado por Rosa-->
+          <div class="logo">
+            <img id="logo" src="../Imagenes/Logo.png" alt="Logo" />
+          </div>
+          <div class="buscador">
+            <input class="input" type="text" name="nombreJuego" id="campo" placeholder="Buscar">
+            <img src="../Imagenes/lupa.png" alt="imagen lupa" />
+          </div>
+          <div class="secciones">
+            <a
+              href="mailto:correo1@example.com,correo2@example.com,correo3@example.com,correo4@example.com"
+              ><img src="../Imagenes/sobre.png" alt="Email"
+            /></a>
+            <div class="dropdown">
+              <img src="../Imagenes/usuario.png" alt="Menu Usuario" onclick="abrirMenu()"/>
+              <div id="opcionesMenu">
+                <a href="#">Iniciar Sesión</a>
+                <a href="#">Crear Usuario</a>
+              </div>
             </div>
-            <div class="buscador">
-                <input type="text">
-                <img src="../Imagenes/lupa.png" alt="imagen lupa">
-            </div>
-            <div class="secciones">
-                <a href="#nosotros">Nosotros</a>
-                <a href="mailto:lula@lula.com"><img src="../Imagenes/sobre.png" alt="Email"></a>
-                <!--ver a qué mail lo referenciamos-->
-                <img src="../Imagenes/usuario.png" alt="Menu Usuario">
-            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <br>
         <nav class="sucursales">
@@ -66,6 +73,8 @@
     <footer>
         <p>Pagina creada por Clara, Omar, Pablo, Rosa, Lucía</p>
     </footer>
+    <script type='text/javascript' src='../Js/sucursales.js'></script>
+
 </body>
 
 </html>

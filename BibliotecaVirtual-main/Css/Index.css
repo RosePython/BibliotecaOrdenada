@@ -6,6 +6,7 @@
 }
 
 body{
+  width: 100%;
   background-color: #D4D4D6;
   position: relative;
   padding-bottom: 3em;
@@ -24,10 +25,6 @@ body{
 
 .nosotros{
   padding: 15px;
-}
-
-footer{
-  padding: 15PX 0;
 }
 
 h3{

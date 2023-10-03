@@ -22,6 +22,10 @@ footer{
     color: rgb(94, 7, 7);
 }    
 
+#logo{
+    cursor: pointer;
+}
+
 #libreria{
     text-align: center;
     border: 5px inset grey;

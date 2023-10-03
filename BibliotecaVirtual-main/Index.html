@@ -17,7 +17,7 @@
       <header>
         <nav>
           <div class="logo">
-            <img src="./Imagenes/Logo.png" alt="Logo" />
+            <img src="./Imagenes/Logo.png" alt="Logo"/>
           </div>
           <div class="buscador">
             <input class="input" type="text" name="nombreJuego" id="campo" placeholder="Buscar">
@@ -29,7 +29,13 @@
               href="mailto:correo1@example.com,correo2@example.com,correo3@example.com,correo4@example.com"
               ><img src="./Imagenes/sobre.png" alt="Email"
             /></a>
-            <img src="./Imagenes/usuario.png" alt="Menu Usuario" />
+            <div class="dropdown">
+              <img src="./Imagenes/usuario.png" alt="Menu Usuario" onclick="abrirMenu()"/>
+              <div id="opcionesMenu">
+                <a href="#">Iniciar Sesión</a>
+                <a href="#">Crear Usuario</a>
+              </div>
+            </div>
           </div>
         </nav>
       </header>
@@ -154,9 +160,10 @@
           </p>
         </section>
       </main>
-        <footer>
-            <p>Pagina creada por Clara, Omar, Pablo, Rosa, Lucía</p>
-        </footer>
+      <footer>
+        <p>Pagina creada por Clara, Omar, Pablo, Rosa, Lucía</p>
+      </footer>
+      <script type='text/javascript' src='./Js/index.js'></script>
     </body>
-    <script type='text/javascript' src='./Js/index.js'></script>
+    
 </html>

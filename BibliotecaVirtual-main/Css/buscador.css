@@ -12,8 +12,8 @@ body{
     min-height: 100vh;
 }
 
-footer{
-    padding: 15PX 0;
+#logo{
+    cursor: pointer;
 }
 
 /*Lista juegos*/

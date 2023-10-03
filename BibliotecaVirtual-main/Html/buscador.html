@@ -12,19 +12,28 @@
     <body>
         <header>
             <nav>
-                <div class="logo">
-                    <a href="../Index.html"><img src="../Imagenes/Logo.png" alt="Logo"></a>
+              <div class="logo">
+                <img id="logo" src="../Imagenes/Logo.png" alt="Logo" />
+              </div>
+              <div class="buscador">
+                <input class="input" type="text" name="nombreJuego" id="campo" placeholder="Buscar">
+                <img src="../Imagenes/lupa.png" alt="imagen lupa" />
+              </div>
+              <div class="secciones">
+                <a
+                  href="mailto:correo1@example.com,correo2@example.com,correo3@example.com,correo4@example.com"
+                  ><img src="../Imagenes/sobre.png" alt="Email"
+                /></a>
+                <div class="dropdown">
+                  <img src="../Imagenes/usuario.png" alt="Menu Usuario" onclick="abrirMenu()"/>
+                  <div id="opcionesMenu">
+                    <a href="#">Iniciar Sesión</a>
+                    <a href="#">Crear Usuario</a>
+                  </div>
                 </div>
-                <div class="buscador">
-                    <input class="input" type="text" name="nombreLibro" id="campo" placeholder="Buscar">
-                    <img src="../Imagenes/lupa.png" alt="imagen lupa">
-                </div>
-                <div class="secciones">
-                    <a href="mailto:correo1@example.com,correo2@example.com,correo3@example.com,correo4@example.com" ><img src="../Imagenes/sobre.png" alt="Email" /></a>                    
-                    <img src="../Imagenes/usuario.png" alt="Menu Usuario">
-                </div> 
+              </div>
             </nav>
-        </header>
+          </header>
         <main>
             <div class="listaJuegos">
                 <!--codigo que falta-->

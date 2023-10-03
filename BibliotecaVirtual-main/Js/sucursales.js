@@ -11,3 +11,12 @@ logo.addEventListener('click', function (){
   // redireccion
   window.location.href = '../index.html';
 });
+
+// redireccion a traves del buscador
+
+const campo = document.getElementById('campo');
+
+campo.addEventListener('click', function () {
+  // redireccion
+  window.location.href = './buscador.html';
+});
