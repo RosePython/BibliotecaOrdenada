@@ -39,6 +39,7 @@ header nav .buscador input{
     background-color: #F6D5C2;
     border-radius: 5px;
     border: 0;
+    padding-left: 5px;
     height: 40px;
     width: 25vw;  /*modificado por Rosa, sino en sitio responsivo se va de la pantalla*/
 }

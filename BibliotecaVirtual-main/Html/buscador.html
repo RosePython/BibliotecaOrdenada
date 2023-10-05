@@ -20,7 +20,7 @@
                 <img id="logo" src="../Imagenes/Logo.png" alt="Logo" />
               </div>
               <div class="buscador">
-                <input class="input" type="text" name="nombreJuego" id="campo" placeholder="Buscar">
+                <input class="input" type="text" name="nombreJuego" id="campo" placeholder="Buscar" onkeyup="buscador()">
                 <img src="../Imagenes/lupa.png" alt="imagen lupa" />
               </div>
               <div class="secciones">
@@ -50,13 +50,8 @@
                             <th>Editorial</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nombre Prueba</td>
-                            <td>Genero Prueba</td>
-                            <td>Escritor Prueba</td>
-                            <td>Editorial Prueba</td>
-                        </tr>
+                    <tbody id="registro">
+                        
                     </tbody>
                 </table>
             </div>
