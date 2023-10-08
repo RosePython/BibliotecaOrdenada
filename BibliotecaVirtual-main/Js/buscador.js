@@ -1,58 +1,3 @@
-// Array de objetos con todos los libros
-let libros = [
-  {
-    nombre: "1984",
-    imagen: "1984.png",
-    escritor: "Pepito Apellido1",
-    estrellas: 4,
-    genero: "ejemplo",
-    editorial: "ejemplo",
-    libro: "1984 - George Orwell.pdf",
-    resumen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt."
-  },
-  {
-    nombre: "CSS",
-    imagen: "LIBRO1.jpg",
-    escritor: "Pepito Apellido2",
-    estrellas: 3,
-    genero: "ejemplo",
-    editorial: "ejemplo",
-    libro: "CSS.pdf",
-    resumen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt."
-  },
-  {
-    nombre: "Eloquent JavaScript",
-    imagen: "LIBRO2.jpg",
-    escritor: "Pepito Apellido3",
-    estrellas: 5,
-    genero: "ejemplo",
-    editorial: "ejemplo",
-    libro: "Eloquent JavaScript.pdf",
-    resumen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt."
-  },
-  {
-    nombre: "JavaScript ES6",
-    imagen: "LIBRO3.jpg",
-    escritor: "Pepito Apellido4",
-    estrellas: 1,
-    genero: "ejemplo",
-    editorial: "ejemplo",
-    libro: "JavaScript ES6.pdf",
-    resumen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt."
-  },
-  {
-    nombre: "JavaScript Inspirate",
-    imagen: "LIBRO4.jpg",
-    escritor: "Pepito Apellido5",
-    estrellas: 2,
-    genero: "ejemplo",
-    editorial: "ejemplo",
-    libro: "JavaScript Inspirate.pdf",
-    resumen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam unde nemo laboriosam iusto alias dolorem corrupti porro quasi accusantium! Dolor modi repellat magnam reprehenderit ab facilis accusantium inventore vitae deserunt."
-  },
-  
-]
-
 function buscador () {
   // eliminamos las filas en caso de ya haber usado el buscador
   document.getElementById("registro").innerHTML = '';
@@ -61,7 +6,7 @@ function buscador () {
    var palabraUsuario = document.getElementById("campo").value.trim();
   //  guardamos el tamaño de lo ingresado
    var tampalabraUsuario = palabraUsuario.length;
-  //  con el for vamos recorriendo el array de objetos 
+  //  con el for vamos recorriendo el array de objetos que tomamos de ArrayDeLibros.js
    for(indice in libros){
     //tomamos el nombre del primer libro
     var nombre = libros[indice].nombre;
@@ -97,18 +42,6 @@ function buscador () {
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*apertura de menu avatar*/
 function abrirMenu() {

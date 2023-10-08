@@ -1,3 +1,31 @@
+// consumimos de arrayDeLibros asi cargamos los libros del carousel 1
+
+let misterioLibros = ``;
+let novelaLibros = ``;
+let suspensoLibros = ``;
+
+libros.forEach(item => {
+    
+    
+    if(item.genero == "misterio"){
+        misterioLibros += `<div class="carousel-item-1"><img id="${item.id}" class="libro" src="./imagenes/${item.imagen}" alt="${item.nombre}">
+        </img></div>`;
+    }else if(item.genero == "novela"){
+        novelaLibros += `<div class="carousel-item-2"><img id="${item.id}" class="libro" src="./imagenes/${item.imagen}" alt="${item.nombre}">
+        </img></div>`;
+    }else if(item.genero == "suspenso"){
+        suspensoLibros += `<div class="carousel-item-3"><img id="${item.id}" class="libro" src="./imagenes/${item.imagen}" alt="${item.nombre}">
+        </img></div>`;
+    }
+    
+
+});
+// insertamos los registros en el carousel que corresponde
+document.getElementById("carousel1").innerHTML = misterioLibros;
+document.getElementById("carousel2").innerHTML = novelaLibros;
+document.getElementById("carousel3").innerHTML = suspensoLibros;
+
+
 //CAROUSEL 1
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel-1");
@@ -106,17 +134,18 @@ campo.addEventListener('click', function () {
   window.location.href = './Html/buscador.html';
 });
 
-// redireccion al libro prueba
-
-const libro = document.getElementById('libroImg');
-
-libro.addEventListener('click', function (){
-  // redireccion
-  window.location.href = './Html/libros.html';
-});
-
 /*apertura de menu avatar*/
+
 function abrirMenu() {
     var opcionesMenu = document.getElementById("opcionesMenu");
     opcionesMenu.style.display = (opcionesMenu.style.display === "block") ? "none" : "block";
 }
+
+// redireccion a detalles del libro y guardamos el Id del libro clickeado
+
+document.querySelectorAll(".libro").forEach(el => el.addEventListener("click", clickImagen));
+function clickImagen(e) {
+    let idLibro = this.id ;
+    window.location.href = './Html/libros.html';
+}
+
